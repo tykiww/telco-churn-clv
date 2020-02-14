@@ -1,6 +1,8 @@
 # telco-churn-clv
 
-Comparing various methods to predict Customer Churn and Lifetime Value on the Telco Dataset
+Comparing various methods to predict Customer Churn and Lifetime Value on the Telco Dataset.
+
+![](https://46gyn61z4i0t1u1pnq2bbk2e-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/customer-churn-edit.jpeg)
 
 
 ## Attrition Analysis
