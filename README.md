@@ -24,3 +24,14 @@ Comparing various methods to predict Customer Churn and Lifetime Value on the Te
 
 Authored by Spencer Allgaier, Arrio Hoffman and Tyki Wada
 
+
+### To do:
+
+1) Individual EDA/Cleaning on Dataset
+2) Aggregate Cleaning into one file
+3) Choose Models of interest and separate workload
+4) Weekly check-in via slack (churn-clv)
+
+
+
+
