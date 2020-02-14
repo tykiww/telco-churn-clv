@@ -22,5 +22,5 @@ Comparing various methods to predict Customer Churn and Lifetime Value on the Te
 
 
 
-Authored by Arrio Hoffman and Tyki Wada
+Authored by Spencer Allgaier, Arrio Hoffman and Tyki Wada
 
