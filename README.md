@@ -1,4 +1,4 @@
-# telco-churn
+# telco-churn-clv
 
 Comparing various methods to predict Customer Churn on the Telco Dataset
 
