@@ -1,6 +1,9 @@
 # telco-churn-clv
 
-Comparing various methods to predict Customer Churn on the Telco Dataset
+Comparing various methods to predict Customer Churn and Lifetime Value on the Telco Dataset
+
+
+## Attrition Analysis
 
 - Logistic Regression
 - Single Decision Tree
@@ -10,10 +13,12 @@ Comparing various methods to predict Customer Churn on the Telco Dataset
 - Support Vector Machines
 - Naive Bayes
 
-Customer Lifetime Value Analysis
+## Customer Lifetime Value Analysis
 
-- Pareto-Negative Binomial (CLV)
-- Ordinary CLV
+- Pareto-Negative Binomial 
+- Ordinary CLV (various methods)
+
+
 
 Authored by Arrio Hoffman and Tyki Wada
 
