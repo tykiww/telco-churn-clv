@@ -24,6 +24,10 @@ Comparing various methods to predict Customer Churn and Lifetime Value on Telco'
 
 Authored by Spencer Allgaier, Arrio Hoffman and Tyki Wada
 
+## Communication
+Workspace: project-loc.group.slack.com
+channel: clv-churn
+
 
 
 
