@@ -112,14 +112,12 @@ Some of the attributes of individuals most correlated with leaving are...
 - Short-term customers (6 months) 
 - fiber optic internet users with no online security/tech support
 - Month to Month contracts
-- Uses electronic checks to pay
 
 Several attributes for individuals that tend to stay are...
 
 - Those with longer contracts.
 - No internet service
 - Inclusion of Tech support/Online security
-- Credit card users
 
 Some attributes that do not seem to have much correlation with retention are...
 
