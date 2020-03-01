@@ -122,7 +122,7 @@ Several attributes for individuals that tend to stay are...
 Some attributes that do not seem to have much correlation with retention are...
 
 - Gender
-- Phone Servicce
+- Phone Service
 
 Although boxplots may provide some handsome information, correlation seems to show enough discrepancy on the data variance. This is enough information that business suggestions may be made to positively impact retention. The information variance shows that although there is some noticeable relationship, it is not extremely high. Some combinations may lead to different results. By performing tests such as logistic regression, random forest, AFT we can decipher the most important variables, hazards, combinations for churn and provide more pertinent and specific suggestions.
 
