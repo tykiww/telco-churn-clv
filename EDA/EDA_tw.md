@@ -81,13 +81,13 @@ The decision tree is correct 13% more than regression. This new output should pr
 imp_val <- sapply(1:2, function(x) prbs[x]*preds_test[,x]) %>% rowSums()
 imp_val <- ifelse(imp_val<test$MonthlyCharges ,test$MonthlyCharges,imp_val)
 test$TotalCharges <- imp_val
-sum(train$MonthlyCharges>train$MonthlyCharges) # This is proof
+sum(train$MonthlyCharges>train$MonthlyCharges) # This is proof for monthly charges never exceeding total charges.
 train <- rbind(train,test)
 rm(imp_val,prbs,relative_coeffs,ob_tests,preds_test,
    preds_train,impute_lm,impute_rp,test);gc()
 ```
 
-    [1] 0
+    [1] 0 # proof.
 
 <hr>
 <hr>
