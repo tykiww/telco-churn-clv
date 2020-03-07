@@ -65,7 +65,7 @@ rpart.plot(rp, extra = 104, fallen.leaves = FALSE)
 
 ![](https://raw.githubusercontent.com/tykiww/telco-churn-clv/master/images/Decision_Tree.png)
 
-The wonderful aspect of the decision tree is that the model decides the most 'statistically significant split' based on the method and keeps the most 'important' values. Fortunately, the model has considered 3 major splits: contract, internet service, and tenure.
+The wonderful aspect of the decision tree is that *the model decides the most 'statistically significant split'* based on the method and keeps the most 'important' values. Fortunately, the model has considered 3 major splits: contract, internet service, and tenure.
 
 In general, the data is split into 74% of those that stay and 26% that leave. The white yes/no boxes indicate the direction of each split. The No/Yes labels at the top of each node declares the general consensus. If majority is a No, it will be labelled no. The probability splits in the middle of the node declares the % split of No to yes. The percentage shown at the bottom show us the total % of the dataset it is using.
 
@@ -123,7 +123,7 @@ rbind(
     Leavers  5.84556       82.61511     495.7652          14.1329673            84.81055
     Stayers 51.11930       47.46743    2531.6631           0.9285618            49.52460
 
-The 'suspect' leavers are more lucrative over their short spans than the stayers. This makes sense because it is common for telco companies to provide discounts for tenure because customers tend to haggle their premiums. However, this begs the question of whether it is better to keep customers for a longer period of time or to strategize an incentive program to increase market-share and pump out a higher volume of turnover. Of course, it is always better to have recurring revenue. Nevertheless, there may be an opportunity to linearly maximize revenue by adjusting for the optimal turnover rate.
+The 'suspect' leavers are more lucrative over their short spans than the stayers. This makes sense because it is common for telco companies to provide discounts for tenure because customers tend to haggle their premiums. *However, this begs the question of whether it is better to keep customers for a longer period of time or to strategize an incentive program to increase market-share and pump out a higher volume of turnover.* Of course, it is always better to have recurring revenue. Nevertheless, there may be an opportunity to linearly maximize revenue by adjusting for the optimal turnover rate.
 
 ## Afterthoughts
 
