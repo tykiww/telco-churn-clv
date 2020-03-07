@@ -1,11 +1,10 @@
 ########
 #
-# Telco Imputer Funcction.
-# Module only used for Telco Analysis.
+# Modules for Data Analysis.
 #
 ########
 
-
+# Telco imputer Function. Only used for Telco Analysis
 telco_imputer <- function(dataset) {
   
   # Load Decision Tree
@@ -32,4 +31,16 @@ telco_imputer <- function(dataset) {
   test$TotalCharges <- imp_val
   
   return(rbind(train,test))
+}
+                    
+# A generic mock of the train_test_split algorithm in sci-kit learn
+train_test_split <- function(dataset, p, rng) {
+  set.seed(rng)
+  
+  train_rows <- sample(nrow(dataset), nrow(dataset)*p)
+  churn_train <- churn_full[train_rows,]
+  churn_test <- churn_full[-train_rows,]
+  
+  return(list(churn_train,churn_test))
+  
 }
