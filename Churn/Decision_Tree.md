@@ -123,9 +123,11 @@ rbind(
     Leavers  5.84556       82.61511     495.7652          14.1329673            84.81055
     Stayers 51.11930       47.46743    2531.6631           0.9285618            49.52460
 
-The 'suspect' leavers are more lucrative over their short spans than the stayers. This makes sense because it is common for telco companies to provide discounts for tenure because customers tend to haggle their premiums. *However, this begs the question of whether it is better to keep customers for a longer period of time or to strategize an incentive program to increase market-share and pump out a higher volume of turnover.* Of course, it is always better to have recurring revenue. Nevertheless, there may be an opportunity to linearly maximize revenue by adjusting for the optimal turnover rate.
+The 'suspect' leavers are more lucrative over their short spans than the stayers. This makes sense because it is common for telco companies to provide discounts for tenure because customers tend to haggle their premiums. Although the model did not detect a significant split in monthly or total charge, an interaction of charge by tenure has not been studied yet. This will be studied further with a more interpretive model such as a logistic regression.
+
+*Nevertheless, this result also begs the question of whether it is better to keep customers for a longer period of time or to strategize an incentive program to increase market-share and pump out a higher volume of turnover.* Of course, it is always better to have recurring revenue. Nevertheless, there may be an opportunity to linearly maximize revenue by adjusting for the optimal turnover rate.
 
 ## Afterthoughts
 
-With an overall retention of 74% most companies would be concerned on how they may keep their customers. The most outright consensus would seem to be: "sign longer contracts!" However, through this analysis we learn that this may not be exactly so. Although a longer contract is the best attribute to retain customers, depending on the company's strategy, we need to focus on the right number of customers to retain.
+With an overall retention of 74% most companies would be concerned on how they may keep their customers. The most outright consensus would seem to be: "sign longer contracts!" However, through this analysis we learn that this may not be exactly so. Although a longer contract is the best attribute to retain customers, depending on the company's strategy, we may need to focus on the right number of customers to retain.
 
