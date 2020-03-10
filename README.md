@@ -20,13 +20,11 @@ Comparing various methods to predict Customer Churn and Lifetime Value on Telco'
 - Pareto-Negative Binomial 
 - Ordinary CLV (various methods)
 
-
-
-Authored by Spencer Allgaier, Arrio Hoffman and Tyki Wada
-
 ## Communication
 Workspace: project-loc.group.slack.com
 channel: clv-churn
+
+Authored by Spencer Allgaier, Arrio Hoffman and Tyki Wada
 
 
 
