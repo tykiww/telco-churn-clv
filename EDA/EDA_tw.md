@@ -3,7 +3,7 @@
 
 ## Read Data
 
-```{r}
+```r
 path = "https://raw.githubusercontent.com/tykiww/telco-churn-clv/master/dataset/telco.csv"
 library(tidyverse)
 raw = read_csv(path);rm(path)
@@ -43,7 +43,7 @@ skimr::skim(raw)
 
 ## Missing 11 rows. Can we impute?
 
-```{r}
+```r
 # Imputation
 lm(TotalCharges~.,data = dplyr::select(raw,-customerID)) %>% summary
 ```
@@ -53,13 +53,13 @@ lm(TotalCharges~.,data = dplyr::select(raw,-customerID)) %>% summary
 
 Looks like it is safe to impute using Multiple Regression. The regression summary output also speaks to collaborative nature of data. There will be lots of insights to extract.
 
-```{r}
+```r
 test = raw[is.na(raw$TotalCharges),]
 train = raw[!is.na(raw$TotalCharges),]
 rm(raw);gc() # clear space.
 ```
 
-```{r}
+```r
 # Use Recursive Partitioning and Regression to impute
 library(rpart)
 impute_lm = lm(TotalCharges~.,data = dplyr::select(train,-customerID))
@@ -77,7 +77,7 @@ relative_coeffs = sapply(1:2,function(i)ob_tests$coefficients[-1,1][i]*median(tr
 
 The decision tree is correct 13% more than regression. This new output should probabilistically improve prediction results. Stick the results into database. Furthermore, monthly charges never exceed predicted total charges. This will assure improved outputs.
 
-```{r}
+```r
 imp_val <- sapply(1:2, function(x) prbs[x]*preds_test[,x]) %>% rowSums()
 imp_val <- ifelse(imp_val<test$MonthlyCharges ,test$MonthlyCharges,imp_val)
 test$TotalCharges <- imp_val
@@ -96,7 +96,7 @@ rm(imp_val,prbs,relative_coeffs,ob_tests,preds_test,
 
 What values seem to correlate most to attrition? These correlations can be used to devise a strategy for retention.
 
-```{r}
+```r
 library(correlationfunnel) # one hot
 train %>%
   dplyr::select(-customerID) %>%
