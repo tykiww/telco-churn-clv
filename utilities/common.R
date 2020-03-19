@@ -38,8 +38,8 @@ train_test_split <- function(dataset, p, rng) {
   set.seed(rng)
   
   train_rows <- sample(nrow(dataset), nrow(dataset)*p)
-  churn_train <- churn_full[train_rows,]
-  churn_test <- churn_full[-train_rows,]
+  churn_train <- dataset[train_rows,]
+  churn_test <- dataset[-train_rows,]
   
   return(list(churn_train,churn_test))
   
