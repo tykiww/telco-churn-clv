@@ -11,8 +11,8 @@ telco_imputer <- function(dataset) {
   require(rpart)
   
   # Locate NA
-  test = raw[is.na(dataset$TotalCharges),]
-  train = raw[!is.na(dataset$TotalCharges),]
+  test = dataset[is.na(dataset$TotalCharges),]
+  train = dataset[!is.na(dataset$TotalCharges),]
   
   # Predict Total Charges
   impute_lm = lm(TotalCharges~.,data = dplyr::select(train,-customerID))
